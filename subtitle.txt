@@ -1,0 +1,125 @@
+In this section, we're
+going to introduce the concept of
+hypothesis testing. Our learning goals for
+this section will be to go over what
+hypothesis testing is, discuss the Bayesian approach
+to hypothesis testing, and then begin to motivate this with an example using coin flips, which we'll see towards
+the end of this section. So a hypothesis is
+a statement about a population parameter such as the mean of our
+poison distribution, and our estimate of the number of people that will come into the line for our grocery store
+example in the next hour. We create two hypotheses. We start off with a null hypothesis and an
+alternative hypothesis, and we decide which one to call the null depending on how
+the problem is set up. So an example would be that, we get an average of five
+people coming in per hour, and the alternative maybe
+being greater than five. So any number greater than
+five would be the alternative, with just five being the null, or it could be a specific
+amounts of people such as five being the null and
+eight being the alternative. Now if one of those values is
+less specific, for example, such as greater than five
+or not equal to five, that will usually
+be the alternative, whereas the null will
+be the specific value. So given the data from
+the sample we use, we then use a hypothesis
+testing procedure to decide whether
+we're going to accept the null hypothesis or reject the null and accept
+the alternative. Now it's often said
+that you can reject the null but never
+accept the alternative. Here we're just saying
+for practical purposes, when moving forward
+with your projects, you'll be taking the path
+that the alternative is true depending on your test statistic. Now, in the Bayesian
+interpretation, we won't get a decision boundary, rather we'll get
+posterior probabilities of the null and the
+alternative hypothesis, and see which one is more likely. So let's look at an example
+to make this clear. We're going to look at
+a coin tossing example. Imagine you have two coins. Coin 1 has 70 percent
+probability of coming up heads, and coin 2 has 50/50
+chance of coming up heads. So we want to pick one without
+looking between these two. Toss that coin 10 times and see how many
+times heads comes up. Then given the number
+of heads that come up, you will say which one is more likely between the two coins? Which one will be more
+likely to be picked? Is it the 50/50 coin
+or the one that has 70 percent probability
+of coming up heads? So given what we know about coins 1 and 2 and
+their probabilities, we can make a table of the probability of seeing a certain amount of heads out of our 10 tosses So here we see
+coin 1 with a probability of heads being 0.5 and coin 2 with probability of
+heads being 0.7. We can see through the chart
+that as we get closer to, so lower numbers are
+going to be much more likely to be the 50/50 coin. As we get to higher values in terms of the number
+of heads that show up, it'll be much more likely
+that we have the 0.7 biased coin in terms of a higher probability
+of coming up as heads. Now we can calculate the likelihood ratio
+based on the number of heads we see when we toss
+this unidentified coin. So let's imagine that
+we saw three heads. We see the probability of coming up with three heads
+out of our 10 tosses, given our coin is either
+have 50/50 chance of landing heads or 70/30
+chance of landing heads. The probability of three
+heads given coin 1 is 0.117 versus the probability for
+three heads given that we have coin 2 is much
+less likely as 0.009. Thus we have that coin
+1 was 13 times more likely to give us the output
+of three heads than coin 2. We call this ratio,
+the likelihood ratio, the ratio of which one of our null versus alternative
+hypothesis is more likely. So as discussed in the
+Bayesian interpretation, we need priors for
+each hypothesis. In this case, we randomly chose the coin that
+we're going to flip, whether it was 0.5 or 0.7. So we're going to say that our prior estimate of
+each one of these values, of the chances of choosing either 0.5 or 0.7 are each
+going to be a half. Since we have no
+way before seeing the data to determine the coin
+that was actually chosen, we say that it was a 50/50
+chance that we're going to either choose 0.5 or choose 0.7. Now we can imagine
+that if we were just pulling a coin from
+the general public, our prior distribution given
+our knowledge of coins, would probably put a
+lot more weight in our prior distribution
+to having a fair coin. Therefore make it much harder
+to actually come up with the hypothesis that
+you are going to accept that there's
+actually an unfair coin. So note that in our example we're going to be assuming some knowledge of the Bayes rule. We're going to be using
+our priors, PH_1 and PH_2. As we just saw before, those are both going to be equal to 50 percent or one-half. We can see how we're going to use our priors to come up with our posterior distribution or our ultimate guess that
+we're going to have, which is the left-hand
+side of this equation. The probability of H_1, one of our hypothesis, given the data that we saw, and that's going to be the x. We're going to base that
+off with the probability of the data that we had, given that we are working
+with the hypothesis of H_1, so H_1 being 0.5, what is the
+probability of getting three heads given that
+we have a fair coin? So that's the probability
+given the data. Then we're going to multiply that by our prior distribution. Then that prior
+distribution again, we just have set to 50/50, and that will all be over
+the probability of the data being chosen over all
+possible hypotheses. Don't worry about
+the denominator, it's not going to be
+important in terms of determining the likelihood ratio. So this will translate
+to the ratio we just saw of probability of the data that we have given H_1 over the probability
+of the data given H_2. The only difference here is
+that we would actually be also factoring in the
+prior probabilities. So here it's 50/50. So 0.5 over 0.5 just
+cancels out to one. But if we imagine the example we gave where we're pulling
+from the general public, we may have 0.99 over 0.1, which would require a
+pretty large value in your denominator in order to say that the 0.7
+was more likely. So that's how that
+prior distribution really comes into play. So our priors, as
+we just mentioned, those prior distributions are multiplied by the
+likelihood ratio, which we defined a
+few slides prior. That likelihood ratio does
+not depend on the prior. So that's just according
+to the data that we had to see the likelihood of each set of data getting three heads given
+their coin of choice. That likelihood
+ratio will tell us how we should update
+those priors. So we're going to
+multiply our priors in reaction to seeing the
+given set of data, and that will give us our
+posterior distribution. So what did we go
+over in this section? We discussed some
+of the basics of hypothesis testing with the alternative and
+null hypotheses. We showed how the
+Bayesian form of hypothesis testing and
+how it will depend on the prior distributions
+along with the likelihood ratio of our null and alternative
+given our data. Then finally, we use
+coin toss example to bring home the Bayesian
+form of hypothesis testing. So next section we will
+continue to talk about hypothesis testing
+and how that comes into play with
+frequentist approaches.
